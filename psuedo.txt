@@ -1,1 +1,4 @@
 to do :create a timeblock that has the time on the left, an input area in the middle, and a save button on the right
+
+** when the time variable is logged in the console, it gives the hour in military time... use this to figure out how to change color. each time block needs an id with its military time.
+
