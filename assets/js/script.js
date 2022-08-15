@@ -6,10 +6,15 @@ $("#currentDay").text(dateandTime); //sets text value of currentDay paragraph to
 
 console.log(time);
 
-var saveEvent = $(".save-button");
 
-
-saveEvent.on("click", function(event) {
+function pastPresentFuture() {
+    $(".input-group").each(function() {
+        var currentHour = $(this).attr("id")
+        console.log("currentHour");
+    })
+}
+pastPresentFuture();
+$(".save-button").on("click", function(event) {
     event.preventDefault();
     console.log("test");
 });
