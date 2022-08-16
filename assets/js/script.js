@@ -15,7 +15,7 @@ function pastPresentFuture() {
         if (blockTime < time) {
             $(this).addClass("past");
         }
-        if (blockTime == time) {
+        if (blockTime === time) {
             $(this).addClass("present");
         } else(blockTime > time); {
             $(this).addClass("future");
@@ -36,4 +36,20 @@ $(".save-button").on("click", function() {
 
 })
 
+// sets the textarea inside the div with the given id to the value in localstorage associated with that event time;
 $("#7 textarea").val(localStorage.getItem("7"));
+$("#8 textarea").val(localStorage.getItem("8"));
+$("#9 textarea").val(localStorage.getItem("9"));
+$("#10 textarea").val(localStorage.getItem("10"));
+$("#11 textarea").val(localStorage.getItem("11"));
+$("#12 textarea").val(localStorage.getItem("12"));
+$("#13 textarea").val(localStorage.getItem("13"));
+$("#14 textarea").val(localStorage.getItem("14"));
+$("#15 textarea").val(localStorage.getItem("15"));
+$("#16 textarea").val(localStorage.getItem("16"));
+$("#17 textarea").val(localStorage.getItem("17"));
+$("#18 textarea").val(localStorage.getItem("18"));
+$("#19 textarea").val(localStorage.getItem("19"));
+$("#20 textarea").val(localStorage.getItem("20"));
+$("#21 textarea").val(localStorage.getItem("21"));
+$("#22 textarea").val(localStorage.getItem("22"));
