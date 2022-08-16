@@ -9,18 +9,26 @@ console.log(time);
 
 
 function pastPresentFuture() {
-    $(".event-text").each(function() {
-        var blockTime = $(this).parent().attr("id");
-        console.log(blockTime);
-        if (blockTime < time) {
-            $(this).addClass("past");
+
+    $(".event-block").each(function() {
+
+        var eventHour = $(this).attr("id");
+
+        if (eventHour < time) {
+
+            $(this).children("textarea").addClass("past");
         }
-        if (blockTime === time) {
-            $(this).addClass("present");
-        } else(blockTime > time); {
-            $(this).addClass("future");
+
+        if (eventHour == time) {
+
+            $(this).children("textarea").addClass("present");
+
         }
-    })
+        if (eventHour > time) {
+
+            $(this).children("textarea").addClass("future");
+        }
+    });
 }
 pastPresentFuture(); // past present future function should immediately run on page load.
 

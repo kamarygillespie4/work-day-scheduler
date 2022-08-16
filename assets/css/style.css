@@ -1,11 +1,11 @@
  .past {
-     background-color: lightpink;
+     background-color: rgb(250, 212, 218);
  }
  
  .present {
-     background-color: lightgray;
+     background-color: rgb(233, 233, 233);
  }
  
  .future {
-     background-color: aquamarine;
+     background-color: rgb(206, 253, 238);
  }
