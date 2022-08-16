@@ -27,11 +27,13 @@ pastPresentFuture(); // past present future function should immediately run on p
 $(".save-button").on("click", function() {
 
     var eventTime = $(this).parent().attr("id");
-    console.log(eventTime);
+    console.log(eventTime); //grabs id(time for event) and saves it in a variable called eventTime
 
     var eventText = $(this).siblings("textarea").val();
-    console.log(eventText);
+    console.log(eventText); //grabs text area input and saves it in a variable called eventText
 
-    localStorage.setItem(eventTime, eventText);
+    localStorage.setItem(eventTime, eventText); // stores these items as a pair in local storage
 
 })
+
+$("#7 textarea").val(localStorage.getItem("7"));
